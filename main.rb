@@ -2,7 +2,7 @@ def draw_button(button, is_dark_mode)
   paint(button.adjust_color(is_dark_mode), background_color(is_dark_mode))
 end
 
-def background_color(is_dark_mode=nil)
+def background_color(is_dark_mode)
   if is_dark_mode
     '#111111'
   else
