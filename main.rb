@@ -9,6 +9,7 @@ def draw_button(label_text, x, y, foreground_color, is_dark_mode)
 end
 
 class Button
+  attr_reader :label_text, :x, :y
   def initialize(label_text, x, y)
     @label_text = label_text
     @x = x
