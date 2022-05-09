@@ -8,7 +8,7 @@ def draw_button(button, foreground_color, is_dark_mode)
   end
 end
 
-def background_color
+def background_color(is_dark_mode=nil)
   '#111111'
 end
 
