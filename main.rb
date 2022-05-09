@@ -1,15 +1,19 @@
 def draw_button(button, foreground_color, is_dark_mode)
   if is_dark_mode
     # darken foreground color for dark mode
-    paint(button, foreground_color - 10, background_color)
+    paint(button, foreground_color - 10, background_color(is_dark_mode))
   else
     # lighten foreground color for non-dark mode
-    paint(button, foreground_color + 10, '#E0E0E0')
+    paint(button, foreground_color + 10, background_color(is_dark_mode))
   end
 end
 
 def background_color(is_dark_mode=nil)
-  '#111111'
+  if is_dark_mode
+    '#111111'
+  else
+    '#E0E0E0'
+  end
 end
 
 class Button
