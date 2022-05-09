@@ -9,6 +9,7 @@ def draw_button(button, foreground_color, is_dark_mode)
 end
 
 def background_color
+  '#111111'
 end
 
 class Button
