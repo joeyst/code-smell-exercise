@@ -24,4 +24,7 @@ class Button
     @y = y
     @foreground_color = foreground_color
   end
+
+  def adjust_color(is_dark_mode)
+  end
 end
