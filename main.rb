@@ -26,5 +26,12 @@ class Button
   end
 
   def adjust_color(is_dark_mode)
+    adjusted_button = self.dup
+    if is_dark_mode
+      adjusted_button.foreground_color -= 10
+    else
+      adjusted_button.foreground_color += 10
+    end
+    adjusted_button
   end
 end
