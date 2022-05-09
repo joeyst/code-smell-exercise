@@ -1,4 +1,4 @@
-def draw_button(button, x=nil, y=nil, foreground_color, is_dark_mode)
+def draw_button(button, foreground_color, is_dark_mode)
   if is_dark_mode
     # darken foreground color for dark mode
     paint(button.label_text, button.x, button.y, foreground_color - 10, '#111111')
