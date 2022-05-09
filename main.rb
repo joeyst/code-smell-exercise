@@ -2,10 +2,10 @@ def draw_button(button, is_dark_mode)
   adjusted_button = button.adjust_color(is_dark_mode)
   if is_dark_mode
     # darken foreground color for dark mode
-    paint(button, adjusted_button.foreground_color, background_color(is_dark_mode))
+    paint(adjusted_button, background_color(is_dark_mode))
   else
     # lighten foreground color for non-dark mode
-    paint(button, adjusted_button.foreground_color, background_color(is_dark_mode))
+    paint(adjusted_button, background_color(is_dark_mode))
   end
 end
 
