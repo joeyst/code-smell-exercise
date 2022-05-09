@@ -12,7 +12,7 @@ end
 
 class Button
   attr_reader :label_text, :x, :y, :foreground_color
-  def initialize(label_text, x, y, foreground_color=nil)
+  def initialize(label_text, x, y, foreground_color)
     @label_text = label_text
     @x = x
     @y = y
